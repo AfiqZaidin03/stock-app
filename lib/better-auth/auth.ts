@@ -33,3 +33,5 @@ export const getAuth = async () => {
 };
 
 export const auth = await getAuth();
+
+//stop at 2:10:00
