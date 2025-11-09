@@ -20,7 +20,7 @@ const UserDropdown = () => {
     router.push("/sign-in");
   };
 
-  const user = { name: "Afiq", email: "contact@gmail.com" };
+  const user = { name: "Afiq", email: "example@gmail.com" };
 
   return (
     <DropdownMenu>
