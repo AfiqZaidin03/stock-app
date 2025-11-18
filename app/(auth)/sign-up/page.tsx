@@ -53,8 +53,6 @@ const SignUpPage = () => {
     }
   };
 
-  //stop at 2:38:00
-
   return (
     <>
       <h1 className="form-title">Sign Up & Personalize</h1>

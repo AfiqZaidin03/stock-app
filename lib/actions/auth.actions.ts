@@ -1,6 +1,7 @@
 "use server";
 import { auth } from "../better-auth/auth";
 import { inngest } from "../inngest/client";
+import { headers } from "next/headers";
 
 export const signUpWithEmail = async ({
   email,
@@ -39,5 +40,14 @@ export const signUpWithEmail = async ({
     console.log("Sign Up Error:", error);
 
     return { success: false, message: "Sign up failed." };
+  }
+};
+
+export const signOut = async () => {
+  try {
+    await auth.api.signOut({ headers: await headers() });
+  } catch (error) {
+    console.log("Sign Out Failed:", error);
+    return { success: false, message: "Sign out failed." };
   }
 };
