@@ -22,8 +22,6 @@ const UserDropdown = ({ user }: { user: User }) => {
     router.push("/sign-in");
   };
 
-  //stop at 2:45:15
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

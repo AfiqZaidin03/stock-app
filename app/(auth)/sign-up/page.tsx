@@ -34,6 +34,7 @@ const SignUpPage = () => {
 
     mode: "onBlur",
   });
+
   const onSubmit = async (data: SignUpFormData) => {
     try {
       const result = await signUpWithEmail(data);
